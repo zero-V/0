@@ -1,0 +1,27 @@
+接口描述
+    接口地址：/data/home
+    请求方式；Get
+    文档格式：application/json
+请求数据
+    query
+        id:     分类id
+    data
+        page:   页码
+响应数据
+    {
+        ad:Array            广告数据
+        [
+            {
+                title:String            广告商品的标题
+                description:String      广告商品的描述
+                url:String              广告商品的图片
+                _id:String              广告商品的id
+            }
+        ],
+        list:Array          商品数据
+        [
+            {
+                ...
+            }
+        ]
+    }
